@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings_parametre"
+        android:title="@string/action_settings_parametre"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action_settings_propos"
+        android:title="@string/action_settings_propos"
+        android:visible="true"/>
+
+</menu>

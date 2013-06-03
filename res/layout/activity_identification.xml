@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="intranet.M2L.Identification" >
+
+    
+    <ImageView
+        android:id="@+id/m2l_icone"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/m2L_icone_description"
+        android:src="@drawable/iconem2l"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+          />
+	   <RelativeLayout
+	       android:id="@+id/module_identification"
+	       android:layout_centerHorizontal="true"
+	       android:layout_below="@+id/m2l_icone"
+	       android:background="@drawable/module_identification"
+	       android:layout_width="230dp"
+           android:layout_height="145dp"
+           android:layout_marginBottom="30dp"
+           >
+
+	       <EditText
+	           android:id="@+id/login"
+	           android:layout_width="200dp"
+	           android:layout_height="50dp"
+	           android:layout_centerHorizontal="true"
+	           android:layout_marginBottom="15dp"
+	           android:layout_marginTop="15dp"
+	           android:background="@drawable/identification"
+	           android:hint="@string/login"
+	           android:inputType="text"
+	           android:textColor="@color/texte"
+	           android:textColorHint="@color/texte" />
+
+	       <EditText
+	           android:id="@+id/password"
+	           android:layout_width="200dp"
+	           android:layout_height="50dp"
+	            android:background="@drawable/identification"
+	           android:layout_below="@+id/login"
+	           android:layout_centerHorizontal="true"
+	           android:layout_marginBottom="15dp"
+	           android:hint="@string/mdp"
+	           android:inputType="textPassword"
+	           android:textColor="@color/texte"
+	           android:textColorHint="@color/texte" />
+
+	       </RelativeLayout>
+	       
+	   <Button
+	    android:layout_below="@+id/module_identification"
+        android:id="@+id/connexion"
+        android:background="@drawable/mesboutons"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/connexion"
+        android:textColor="@color/texte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />
+</RelativeLayout>

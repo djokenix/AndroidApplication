@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        
+        android:id="@+id/texte_presentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/presentation"
+        android:textColor="@color/texte"
+        android:textSize="@dimen/texte_important" />
+    
+    <Button
+        android:id="@+id/entrer"
+        android:background="@drawable/mesboutons"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/entrer"
+        android:textColor="@color/texte"
+        android:layout_below="@+id/texte_presentation" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />
+    
+    <ImageView
+        android:id="@+id/m2l_icone"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/m2L_icone_description"
+        android:layout_below="@+id/entrer" 
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true" 
+        />
+
+</RelativeLayout>

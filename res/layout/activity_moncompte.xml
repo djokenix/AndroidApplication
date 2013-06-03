@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/fond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+  <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" >
+
+<!-- login -->
+  <TextView
+      
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/login"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:hint="mettre la valeur du mec"
+     android:id="@+id/login"
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+	 android:inputType="text"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  		</TableRow>
+  	
+   <TableRow 
+       android:layout_marginTop="15dp"><!-- mdp -->
+  <TextView
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/mdp"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:id="@+id/mdp"
+	 android:inputType="numberPassword"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  	</TableRow>
+  	
+   <TableRow 
+       android:layout_marginTop="15dp"><!-- telephone -->
+  <TextView
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/telephone"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:id="@+id/telephone"
+	 android:inputType="phone"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  	</TableRow>
+    
+   <TableRow 
+       android:layout_marginTop="15dp"><!-- code postale -->
+  <TextView
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/cp"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:id="@+id/cp"
+	 android:inputType="number"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  	</TableRow>
+    
+   <TableRow 
+       android:layout_marginTop="15dp"> <!-- ville -->
+  <TextView
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/ville"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:id="@+id/ville"
+	 android:inputType="text"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  	</TableRow>
+    
+   <TableRow 
+       android:layout_marginTop="15dp"> <!-- adresse1 -->
+  <TextView
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/adr1"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:id="@+id/adr1"
+	 android:inputType="textMultiLine"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  	</TableRow>
+    
+   <TableRow 
+       android:layout_marginTop="15dp"><!-- adresse2 -->
+  <TextView
+    android:layout_width="@dimen/moncompteview"
+    android:layout_height="50dp"
+    android:textColor="@color/texte"
+    android:text="@string/adr2"
+    android:textSize="@dimen/texte_important"
+  />
+  <EditText
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:id="@+id/adr2"
+	 android:inputType="text"
+	 android:textColor="@color/texte"
+	 android:textSize="@dimen/texte_important"
+	 android:textColorHint="@color/texte" 
+	 android:background="@drawable/module_identification"/>
+  	</TableRow>
+  	
+  	<TableRow 
+		      android:layout_gravity="center"
+		      android:layout_marginTop="30dp"
+		      android:layout_marginBottom="30dp"
+		       >
+   <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+		android:id="@+id/modifier"
+		android:background="@drawable/mesboutons"
+		android:text="@string/modification"
+		android:textColor="@color/texte"
+		/>
+   	</TableRow>
+</TableLayout>
+
+		
+</ScrollView>

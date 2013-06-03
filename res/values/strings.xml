@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maison des Ligues</string>
+    <string name="action_settings_parametre">Paramètre</string>
+     <string name="action_settings_propos">A propos</string>
+    <string name="presentation">Bienvenue sur le portail intéractif de la Maison des Ligues de Lorraine.</string>
+	<string name="entrer">Entrer</string>
+	<string name="m2L_icone_description">La maison des ligues de lorraine, la passion du sport</string>
+	
+	<string name="connexion">Connexion</string>
+	
+	<string name="bienvenue" >Bienvenue %1$s,et bonne visite!</string>
+	<string name="service1">Mon compte</string>
+	<string name="service2">Connexion au réseau</string>
+	<string name="service3">Récupérer clées</string>
+	<string name="service4">Mes informations</string>
+	
+	<string name="login">login </string>
+	<string name="mdp">mot de passe </string>
+	<string name="telephone">téléphone </string>
+	<string name="adr1">adresse </string>
+	<string name="adr2">suite adresse </string>
+	<string name="cp">code postale </string>
+	<string name="ville">ville </string>
+	<string name="modification">Modifier</string>
+	
+	<string name="digicode">Digicode</string>
+	<string name="wep">Clé Wep</string>
+	
+	
+</resources>

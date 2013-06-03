@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/fond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/bienvenue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/texte"
+        android:textColorHint="@color/texte"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/texte_important"
+        android:layout_marginBottom="50dp" />
+    
+		    <RelativeLayout
+		    android:id="@+id/menu"
+		    android:layout_below="@+id/bienvenue"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:layout_centerInParent="true" >
+		    
+		    <Button
+		        
+		        android:layout_marginBottom="10dp"
+		 		android:layout_marginRight="10dp"
+		        android:id="@+id/service1"
+		        android:background="@drawable/mesboutons"
+		        android:layout_width="150dp"
+		        android:layout_height="150dp"
+		        android:text="@string/service1"
+		        android:textColor="@color/texte"
+		      
+
+            />
+		    <Button
+		        
+		        android:layout_marginBottom="10dp"
+		        android:id="@+id/service2"
+		        android:layout_toRightOf="@+id/service1"
+		        android:background="@drawable/mesboutons"
+		        android:layout_width="150dp"
+		        android:layout_height="150dp"
+		          
+		        android:text="@string/service2"
+		        android:textColor="@color/texte"    
+            />
+		    
+		    <Button
+		 		android:layout_marginRight="10dp"
+		        android:id="@+id/service3"
+		        android:background="@drawable/mesboutons"
+		        android:layout_width="150dp"
+		        android:layout_height="150dp"
+		        android:text="@string/service3"
+		        android:textColor="@color/texte"
+		        android:layout_below="@+id/service1" 
+
+            />
+		    <Button
+		        android:id="@+id/service4"
+		        android:layout_toRightOf="@+id/service3"
+		        android:background="@drawable/mesboutons"
+		        android:layout_width="150dp"
+		        android:layout_height="150dp"
+		          android:layout_below="@+id/service2" 
+		        android:text="@string/service4"
+		        android:textColor="@color/texte"    
+            />
+		    
+		    
+		    </RelativeLayout>
+    
+    
+
+</RelativeLayout>
