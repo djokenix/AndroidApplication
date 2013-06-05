@@ -81,6 +81,8 @@ public final class R {
         public static final int adr2=0x7f060010;
         public static final int app_name=0x7f060000;
         public static final int bienvenue=0x7f060007;
+        public static final int cle_digicode=0x7f060015;
+        public static final int cle_wep=0x7f060017;
         public static final int connexion=0x7f060006;
         public static final int cp=0x7f060011;
         public static final int digicode=0x7f060014;
@@ -96,7 +98,7 @@ public final class R {
         public static final int service4=0x7f06000b;
         public static final int telephone=0x7f06000e;
         public static final int ville=0x7f060012;
-        public static final int wep=0x7f060015;
+        public static final int wep=0x7f060016;
     }
     public static final class style {
         /** 

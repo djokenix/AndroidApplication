@@ -6,6 +6,7 @@ import metier.Root;
 import metier.Utilisateur;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,7 +24,7 @@ public class Identification extends Activity {
 	private static final String CreateTableUtilisateur = null;
 	final String Extra_Login = "user_login";
 	final String Extra_Password = "user_password";
-	final int Nombre_user=0;
+	
 	
 	//BDD	
 	public void onCreate(SQLiteDatabase db) {
@@ -43,9 +44,9 @@ public class Identification extends Activity {
         Utilisateur utilisateur = new  Utilisateur(null,"Jonathan","mdp","0672232612","adrs1","adrs2","91240","ville", false);
         Utilisateur Fabien=new Utilisateur(null,"Fabien","mdp1","telephone","adresseF","","codepostaleF","villeF",true);
         //On ouvre la base de données pour écrire dedans
-       
         Log.v("","");
         utilisateurBDD.open();
+        utilisateurBDD.getUtilisateurWithLogin(Extra_Login);
         //On insère l'utilisateur que l'on vient de créer
         utilisateurBDD.insertUtilisateur(utilisateur);
         utilisateurBDD.insertUtilisateur(Fabien);
@@ -57,9 +58,9 @@ public class Identification extends Activity {
         //Toast.makeText(Identification.this,Fabien.getLogin(),Toast.LENGTH_SHORT).show();
         //Toast.makeText(Identification.this,utilisateur.getMdp1(),Toast.LENGTH_SHORT).show();
         //Toast.makeText(Identification.this,utilisateur.getTelephone(),Toast.LENGTH_SHORT).show();
-        Toast.makeText(Identification.this,utilisateur.getCp(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(Identification.this,utilisateur.getCp(),Toast.LENGTH_SHORT).show();
         //Toast.makeText(Identification.this,utilisateur.getVille(),Toast.LENGTH_SHORT).show();
-        utilisateurBDD.close();
+        //utilisateurBDD.close();
 	      
         
 	    final EditText login = (EditText) findViewById(R.id.login);

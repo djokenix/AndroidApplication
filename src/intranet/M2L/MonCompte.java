@@ -1,6 +1,7 @@
 package intranet.M2L;
 
-
+import intranet.M2L.Identification;
+import db.UtilisateurBDD;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -12,13 +13,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MonCompte extends Activity {
+	  
 
-	
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moncompte);
+      
+     
+        
         }
 	
 	@Override

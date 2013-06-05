@@ -28,7 +28,7 @@ public class Accueil extends Activity {
         final Button service3bouton =(Button) findViewById(R.id.service3);
 		 
         service1bouton.setOnClickListener(new OnClickListener() {
-			  @Override
+			  
 			  public void onClick(View v) {
 				Intent intent = new Intent(Accueil.this, MonCompte.class);
 				startActivity(intent);
@@ -36,10 +36,10 @@ public class Accueil extends Activity {
 			});
         
         service3bouton.setOnClickListener(new OnClickListener() {
-			  @Override
+			  
 			  public void onClick(View c) {
-				Intent intent2 = new Intent(Accueil.this, MesClees.class);
-				startActivity(intent2);
+				Intent intent = new Intent(Accueil.this, MesClees.class);
+				startActivity(intent);
 				}
 			});	
         

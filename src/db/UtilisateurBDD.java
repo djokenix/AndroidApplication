@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v4.widget.SimpleCursorAdapter;
 
 public class UtilisateurBDD {
 	
@@ -32,7 +33,8 @@ public class UtilisateurBDD {
 	private static final String COL_estAdmin="estAdmin";
 	private static final int NUM_COL_estAdmin =8;
 			
-	
+	 
+       
 	
  
 	private SQLiteDatabase bdd;
@@ -57,6 +59,7 @@ public class UtilisateurBDD {
 	public SQLiteDatabase getBDD(){
 		return bdd;
 	}
+	
  //Insertion d'un utilisateur (mettre en relation avec la bdd exterieure, on n'ajoute pas d'utilisateur sur l'appli android
 	public  long insertUtilisateur(Utilisateur utilisateur){
 		//Création d'un ContentValues (fonctionne comme une HashMap)
@@ -107,7 +110,12 @@ public class UtilisateurBDD {
 				COL_ville,COL_cp,COL_adr1,COL_adr2,COL_estAdmin}, COL_numUtilisateur + " LIKE \"" + num_utilisateur +"\"", null, null, null, null);
 		return cursorToUtilisateur(c);
 	}
- 
+	public Utilisateur getUtilisateurWithLogin(String login){
+		Cursor c = bdd.query(table_utilisateur, new String[] {COL_numUtilisateur, COL_login, COL_mdp1, COL_telephone,
+				COL_ville,COL_cp,COL_adr1,COL_adr2,COL_estAdmin}, COL_login + " LIKE \"" + login +"\"", null, null, null, null);
+		return cursorToUtilisateur(c);
+	}
+   
 	//Cette méthode permet de convertir un cursor en un Utilisateur
 	private Utilisateur cursorToUtilisateur(Cursor c){
 		//si aucun élément n'a été retourné dans la requête, on renvoie null
@@ -136,4 +144,5 @@ public class UtilisateurBDD {
 		//On retourne l'utilisateur
 		return utilisateur;
 	}
+	
 }

@@ -14,7 +14,7 @@
 	<string name="service1">Mon compte</string>
 	<string name="service2">Connexion au réseau</string>
 	<string name="service3">Récupérer clées</string>
-	<string name="service4">Mes informations</string>
+	<string name="service4">A venir</string>
 	
 	<string name="login">login </string>
 	<string name="mdp">mot de passe </string>
@@ -26,7 +26,9 @@
 	<string name="modification">Modifier</string>
 	
 	<string name="digicode">Digicode</string>
+	<string name="cle_digicode">%1$s</string>
 	<string name="wep">Clé Wep</string>
+	<string name="cle_wep">%2$s</string>
 	
 	
 </resources>

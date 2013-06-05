@@ -19,12 +19,11 @@
 	        android:textColor="@color/texte"
 	        android:textSize="@dimen/texte_important" />
 
-	     <EditText
-	     android:hint="@string/digicode"
+	     <TextView
+	     android:hint="@string/cle_digicode"
 	     android:id="@+id/digicode"
 	     android:layout_width="fill_parent"
 	     android:layout_height="50dp"
-		 android:inputType="text"
 		 android:textColor="@color/texte"
 		 android:textSize="@dimen/texte_important"
 		 android:textColorHint="@color/texte" 
@@ -46,12 +45,11 @@
 	        android:textColor="@color/texte"
 	        android:textSize="@dimen/texte_important" />
 
-	     <EditText
-	     android:hint="@string/wep"
+	     <TextView
+	     android:hint="@string/cle_wep"
 	     android:id="@+id/wep"
 	     android:layout_width="fill_parent"
 	     android:layout_height="50dp"
-		 android:inputType="text"
 		 android:textColor="@color/texte"
 		 android:textSize="@dimen/texte_important"
 		 android:textColorHint="@color/texte" 
