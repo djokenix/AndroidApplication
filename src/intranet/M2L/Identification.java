@@ -46,7 +46,7 @@ public class Identification extends Activity {
         //On ouvre la base de données pour écrire dedans
         Log.v("","");
         utilisateurBDD.open();
-        utilisateurBDD.getUtilisateurWithLogin(Extra_Login);
+        //utilisateurBDD.getUtilisateurWithLogin(Extra_Login);
         //On insère l'utilisateur que l'on vient de créer
         utilisateurBDD.insertUtilisateur(utilisateur);
         utilisateurBDD.insertUtilisateur(Fabien);
